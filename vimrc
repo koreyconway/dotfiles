@@ -31,7 +31,7 @@ set hidden
 set visualbell
 set smartcase
 set mouse=a
-set cmdheight=2
+set cmdheight=1
 set hlsearch
 set incsearch
 set timeoutlen=1000 ttimeoutlen=0

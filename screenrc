@@ -1,1 +1,3 @@
+# allow scrolling with mouse when using screen
 termcapinfo xterm* ti@:te@
+
