@@ -37,7 +37,13 @@ command -v ranger > /dev/null 2>&1 && alias r=ranger
 #alias grep="grep -in"
 
 # Add user bin to path (~/bin)
-[ -d ~/bin ] && PATH=~/bin:$PATH
+[ -d ~/bin ] && [[ ! $PATH == *"${HOME}/bin"* ]] && PATH=~/bin:$PATH
+
+# ls after every cd
+function chpwd() {
+	emulate -L zsh
+	ls
+}
 
 # OS Specific configuration
 #case `uname` in
