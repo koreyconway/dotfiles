@@ -16,4 +16,5 @@ link_file() {
 link_file "zshrc"
 link_file "tmux.conf"
 link_file "screenrc"
+link_file "vimrc"
 
