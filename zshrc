@@ -15,6 +15,8 @@ antigen use oh-my-zsh
 antigen bundle wd
 antigen bundle zsh_reload
 antigen bundle command-not-found
+antigen bundle history-substring-search
+
 command -v git > /dev/null 2>&1 && antigen bundle git
 command -v svn > /dev/null 2>&1 && antigen bundle svn
 command -v sudo > /dev/null 2>&1 && antigen bundle sudo
