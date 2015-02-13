@@ -33,6 +33,9 @@ bindkey -e
 # Alias r to ranger
 command -v ranger > /dev/null 2>&1 && alias r=ranger
 
+# Useful Shortcuts
+alias b=popd # go back in directories
+
 # Alias for sensible defaults
 #alias du="du -h"
 #alias df="df -h"
