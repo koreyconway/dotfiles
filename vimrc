@@ -42,7 +42,9 @@ set cursorline
 set encoding=utf-8
 silent execute '!mkdir -p $HOME/.vim/backup'
 silent execute '!mkdir -p $HOME/.vim/swap'
-silent execute '!mkdir -p $HOME/.vim/undo'
+if version >= 703
+	silent execute '!mkdir -p $HOME/.vim/undo'
+endif
 set undodir=$HOME/.vim/undo//
 set backupdir=$HOME/.vim/backup//
 set directory=~/.vim/swap//
