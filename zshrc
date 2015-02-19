@@ -24,6 +24,13 @@ command -v sudo > /dev/null 2>&1 && antigen bundle sudo
 # Set theme
 antigen theme robbyrussell
 
+# Needed by zsh_reload
+if [[ -z "$ZSH_CACHE_DIR" ]]; then
+  ZSH_CACHE_DIR="$ZSH/cache/"
+fi
+
+antigen apply
+
 # Vim as default editor
 export EDITOR=vim
 
@@ -62,6 +69,4 @@ function chpwd() {
 
 # Load local settings 
 [ -r ~/.zshrc.local ] && source ~/.zshrc.local
-
-antigen apply
 
