@@ -53,11 +53,13 @@ set splitbelow
 set splitright
 map <Space> \
 let maplocalleader = ","
-noremap <C-r> :nohls<CR><C-l>
 
-" Theme
+" Style
 colorscheme 256-grayvim
 set background=dark
-
-" Font
 set guifont=Monospace\ 11
+
+" Remaps
+noremap U <c-r>
+noremap <C-r> :nohls<CR><C-l>
+
