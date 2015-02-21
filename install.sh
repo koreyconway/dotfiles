@@ -1,6 +1,4 @@
-BASEDIR=$(dirname $(readlink -f "$0"))
-
-echo $BASEDIR
+BASEDIR=$(cd $(dirname $0); pwd;)
 
 link_file() {
 	# $1 is basename of file
