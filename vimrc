@@ -11,6 +11,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'tpope/vim-sensible'
 NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'bling/vim-airline'
+NeoBundle 'vim-scripts/Tagbar'
 
 call neobundle#end()
 filetype plugin indent on
@@ -63,3 +64,8 @@ set guifont=Monospace\ 11
 noremap U <c-r>
 noremap <C-r> :nohls<CR><C-l>
 
+" Tagbar Settings
+let g:tagbar_autofocus = 1
+let g:tagbar_autoclose = 1
+let g:tagbar_sort = 0
+noremap <F2> :TagbarToggle<CR>
