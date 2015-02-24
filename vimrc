@@ -23,7 +23,6 @@ set laststatus=2
 set t_Co=256
 
 " Vim Basic Settings
-"set relativenumber
 set number
 set scrolloff=10
 set ignorecase
@@ -39,7 +38,6 @@ set timeoutlen=1000 ttimeoutlen=0
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 set cursorline
-"set autowrite
 set encoding=utf-8
 silent execute '!mkdir -p $HOME/.vim/backup'
 silent execute '!mkdir -p $HOME/.vim/swap'
@@ -62,7 +60,10 @@ set guifont=Monospace\ 11
 
 " Remaps
 noremap U <c-r>
-noremap <C-r> :nohls<CR><C-l>
+noremap <Leader>q :q<CR>
+noremap Q :q<CR>
+noremap q: :q
+noremap W :w<CR>
 
 " Tagbar Settings
 let g:tagbar_autofocus = 1
