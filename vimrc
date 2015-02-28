@@ -64,6 +64,10 @@ noremap <Leader>q :q<CR>
 noremap Q :q<CR>
 noremap q: :q
 noremap W :w<CR>
+noremap <up> gk
+noremap <down> gj
+noremap <home> g<home>
+noremap <end> g<end>
 
 " Tagbar Settings
 let g:tagbar_autofocus = 1
