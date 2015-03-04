@@ -68,6 +68,8 @@ noremap <Leader>q :q<CR>
 noremap Q :q<CR>
 noremap q: :q
 noremap W :w<CR>
+
+" Navigation
 noremap <up> gk
 noremap <down> gj
 noremap <home> g<home>
