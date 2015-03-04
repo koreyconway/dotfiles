@@ -68,6 +68,10 @@ noremap <Leader>q :q<CR>
 noremap Q :q<CR>
 noremap q: :q
 noremap W :w<CR>
+noremap <up> gk
+noremap <down> gj
+noremap <home> g<home>
+noremap <end> g<end>
 
 " Pasting
 nnoremap p "0gp
