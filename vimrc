@@ -75,11 +75,23 @@ noremap <down> gj
 noremap <home> g<home>
 noremap <end> g<end>
 
+" Line insertion
+noremap o o<esc>
+noremap O O<esc>
+
 " Pasting
 nnoremap p "0gp
 nnoremap P "0P
 vnoremap p "0gp
 vnoremap P "0P
+nnoremap gp "+gp
+nnoremap gP "+P
+vnoremap gp "+gp
+vnoremap gP "+P
+
+" Copying
+vnoremap y y`]
+vnoremap Y Y`]
 
 " Tagbar Settings
 let g:tagbar_autofocus = 1
