@@ -27,17 +27,16 @@ set t_Co=256
 set number
 set scrolloff=10
 set ignorecase
+set smartcase
+set hlsearch
+set incsearch
 set nostartofline
 set hidden
 set visualbell
-set smartcase
 set mouse=a
 set cmdheight=1
-set hlsearch
-set incsearch
 set timeoutlen=1000 ttimeoutlen=0
 filetype plugin on
-set omnifunc=syntaxcomplete#Complete
 set cursorline
 set encoding=utf-8
 silent execute '!mkdir -p $HOME/.vim/backup'
@@ -55,23 +54,49 @@ map <Space> \
 let maplocalleader = ","
 
 " Style
-colorscheme 256-grayvim
-set background=dark
-set guifont=Monospace\ 11
+" colorscheme 256-grayvim
+" set background=dark
+" set guifont=Monospace\ 11
 
-" Remaps
+" Escape
+inoremap jj <esc>
+
+" Undo
 noremap U <c-r>
+
+" Saving and quitting
 noremap <Leader>q :q<CR>
 noremap Q :q<CR>
 noremap q: :q
 noremap W :w<CR>
+
+" Navigation
 noremap <up> gk
 noremap <down> gj
 noremap <home> g<home>
 noremap <end> g<end>
+
+" Line insertion
+noremap o o<esc>
+noremap O O<esc>
+
+" Pasting
+nnoremap p "0gp
+nnoremap P "0P
+vnoremap p "0gp
+vnoremap P "0P
+nnoremap gp "+gp
+nnoremap gP "+P
+vnoremap gp "+gp
+vnoremap gP "+P
+
+" Copying
+vnoremap y y`]
+vnoremap Y Y`]
 
 " Tagbar Settings
 let g:tagbar_autofocus = 1
 let g:tagbar_autoclose = 1
 let g:tagbar_sort = 0
 noremap <F2> :TagbarToggle<CR>
+
