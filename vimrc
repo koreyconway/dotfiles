@@ -13,6 +13,7 @@ NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'vim-scripts/Tagbar'
 NeoBundle 'digitaltoad/vim-jade'
+NeoBundle 'tpope/vim-surround'
 
 call neobundle#end()
 filetype plugin indent on
