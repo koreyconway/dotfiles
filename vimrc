@@ -95,6 +95,9 @@ vnoremap gP "+P
 vnoremap y y`]
 vnoremap Y Y`]
 
+" Cut
+vnoremap x "0d
+
 " Tagbar Settings
 let g:tagbar_autofocus = 1
 let g:tagbar_autoclose = 1
