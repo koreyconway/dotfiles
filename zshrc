@@ -16,6 +16,7 @@ antigen bundle wd
 antigen bundle zsh_reload
 antigen bundle command-not-found
 antigen bundle history-substring-search
+antigen bundle tmux
 
 command -v git > /dev/null 2>&1 && antigen bundle git
 command -v svn > /dev/null 2>&1 && antigen bundle svn
