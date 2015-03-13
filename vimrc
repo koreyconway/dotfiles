@@ -60,8 +60,12 @@ let maplocalleader = ","
 " set background=dark
 " set guifont=Monospace\ 11
 
+" GUI Options
+set guioptions+=crl
+
 " Escape
 inoremap jj <esc>
+vnoremap jj <esc>
 
 " Undo
 noremap U <c-r>
@@ -93,11 +97,16 @@ vnoremap gp "+gp
 vnoremap gP "+P
 
 " Copying
+noremap gy "+y
+noremap gY "+Y
 vnoremap y y`]
 vnoremap Y Y`]
 
 " Cut
 vnoremap x "0d
+
+" Search
+vnoremap // y/<c-r>"<cr>
 
 " Tagbar Settings
 let g:tagbar_autofocus = 1
