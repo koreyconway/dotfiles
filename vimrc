@@ -92,6 +92,8 @@ vnoremap gp "+gp
 vnoremap gP "+P
 
 " Copying
+noremap gy "+y
+noremap gY "+Y
 vnoremap y y`]
 vnoremap Y Y`]
 
