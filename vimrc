@@ -59,6 +59,9 @@ let maplocalleader = ","
 " set background=dark
 " set guifont=Monospace\ 11
 
+" GUI Options
+set guioptions+=crl
+
 " Escape
 inoremap jj <esc>
 vnoremap jj <esc>
