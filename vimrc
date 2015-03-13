@@ -51,6 +51,7 @@ set backup
 set swapfile
 set splitbelow
 set splitright
+set autochdir
 map <Space> \
 let maplocalleader = ","
 
