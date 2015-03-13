@@ -61,6 +61,7 @@ let maplocalleader = ","
 
 " Escape
 inoremap jj <esc>
+vnoremap jj <esc>
 
 " Undo
 noremap U <c-r>
@@ -99,6 +100,9 @@ vnoremap Y Y`]
 
 " Cut
 vnoremap x "0d
+
+" Search
+vnoremap // y/<c-r>"<cr>
 
 " Tagbar Settings
 let g:tagbar_autofocus = 1
