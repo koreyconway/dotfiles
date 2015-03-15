@@ -1,4 +1,4 @@
-"Begin NeoBundle Scripts-----------------------------
+"--Begin NeoBundle Scripts--
 if has('vim_starting')
 	set nocompatible
 	set runtimepath+=~/.vim/bundle/neobundle.vim/
@@ -7,7 +7,7 @@ endif
 call neobundle#begin(expand('~/.vim/bundle'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-" My Bundles here:
+" My Bundles
 NeoBundle 'tpope/vim-sensible'
 NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'bling/vim-airline'
@@ -18,7 +18,7 @@ NeoBundle 'tpope/vim-surround'
 call neobundle#end()
 filetype plugin indent on
 NeoBundleCheck
-"End NeoBundle Scripts-------------------------
+"--End NeoBundle Scripts--
 
 set encoding=utf-8
 set laststatus=2
@@ -52,7 +52,7 @@ set swapfile
 set splitbelow
 set splitright
 set autochdir
-map <Space> \
+map <space> \
 let maplocalleader = ","
 
 " Style
@@ -68,10 +68,10 @@ vnoremap jj <esc>
 noremap U <c-r>
 
 " Saving and quitting
-noremap <Leader>q :q<CR>
-noremap Q :q<CR>
-noremap q: :q
-noremap W :w<CR>
+noremap <leader>q :q<cr>
+noremap W :w<cr>
+noremap Q :q<cr>
+noremap q: :q<cr>
 
 " Navigation
 noremap <up> gk
@@ -109,5 +109,5 @@ vnoremap // y/<c-r>"<cr>
 let g:tagbar_autofocus = 1
 let g:tagbar_autoclose = 1
 let g:tagbar_sort = 0
-noremap <F2> :TagbarToggle<CR>
+noremap <f2> :TagbarToggle<cr>
 
