@@ -14,6 +14,13 @@ NeoBundle 'bling/vim-airline'
 NeoBundle 'vim-scripts/Tagbar'
 NeoBundle 'digitaltoad/vim-jade'
 NeoBundle 'tpope/vim-surround'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/vimproc.vim'
+NeoBundle 'Shougo/neomru.vim'
+NeoBundle 'h1mesuke/unite-outline'
+if executable('ag')
+	NeoBundle 'rking/ag.vim'
+endif
 
 call neobundle#end()
 filetype plugin indent on
@@ -109,6 +116,19 @@ vnoremap x "0d
 
 " Search
 vnoremap // y/<c-r>"<cr>
+
+" Open Files/Buffers/Whatevers
+if executable('ag')
+	let g:unite_source_rec_async_command='ag --nocolor --nogroup --hidden -g ""'
+endif
+call unite#filters#matcher_default#use(['matcher_fuzzy'])
+call unite#filters#sorter_default#use(['sorter_rank'])
+call unite#custom#source('file_rec,file_rec/async', 'ignore_pattern', '\.jpe?g$|\.gif$|\.png$|\.pdf$')
+map <leader>ff :Unite -no-split -buffer-name=files -start-insert file_rec/async:!<cr>
+map <leader>fb :Unite -no-split -buffer-name=buffer buffer<cr>
+map <leader>fr :Unite -no-split -buffer-name=mru file_mru<cr>
+map <leader>fy :Unite -no-split -buffer-name=yank history/yank<cr>
+map <f4> :Unite -no-split -buffer-name=buffer buffer<cr>
 
 " Tagbar Settings
 let g:tagbar_autofocus = 1
