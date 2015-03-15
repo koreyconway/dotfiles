@@ -59,10 +59,12 @@ let maplocalleader = ","
 " colorscheme 256-grayvim
 " set background=dark
 
+" Command Line Window
+noremap g: q:
 
 " Escape
-inoremap jj <esc>
-vnoremap jj <esc>
+inoremap jj <esc>`^
+" vnoremap jj <esc>
 
 " Undo
 noremap U <c-r>
@@ -96,10 +98,13 @@ vnoremap gP "+P
 " Copying
 noremap gy "+y
 noremap gY "+Y
+noremap yyy yyp
 vnoremap y y`]
 vnoremap Y Y`]
 
 " Cut
+nnoremap x "0d
+nnoremap xx "0dd
 vnoremap x "0d
 
 " Search
