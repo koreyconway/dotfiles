@@ -20,6 +20,7 @@ link_file "zshrc"
 link_file "tmux.conf"
 link_file "screenrc"
 link_file "vimrc"
+link_file "gvimrc"
 
 [ -f "${BASEDIR}/tmux.conf.${OS}" ] && \
 	link_file "tmux.conf.${OS}" "tmux.conf.os"

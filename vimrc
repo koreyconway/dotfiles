@@ -58,10 +58,7 @@ let maplocalleader = ","
 " Style
 " colorscheme 256-grayvim
 " set background=dark
-" set guifont=Monospace\ 11
 
-" GUI Options
-set guioptions+=crl
 
 " Escape
 inoremap jj <esc>
