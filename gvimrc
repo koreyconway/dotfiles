@@ -1,5 +1,5 @@
 " GUI Options
 set guioptions+=crl
-colorscheme monokai
+colorscheme molokai
 " set guifont=Monospace\ 11
 
