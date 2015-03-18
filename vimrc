@@ -108,6 +108,10 @@ nnoremap > :bn<cr>
 noremap o o<esc>
 noremap O O<esc>
 
+" Indentation
+vnoremap > >`<v`>
+vnoremap < <`<v`>
+
 " Pasting
 nnoremap p "0gp
 nnoremap P "0P
