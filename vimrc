@@ -88,6 +88,22 @@ noremap <down> gj
 noremap <home> g<home>
 noremap <end> g<end>
 
+" Window Navigation
+noremap <esc>h <c-w>h
+noremap <esc>j <c-w>j
+noremap <esc>k <c-w>k
+noremap <esc>l <c-w>l
+noremap ˙ <c-w>h
+noremap ∆ <c-w>j
+noremap ˚ <c-w>k
+noremap ¬ <c-w>l
+noremap <esc>\ :vsplit<cr>:Unite -no-split -buffer-name=buffer buffer<cr>
+noremap <esc>- :split<cr>:Unite -no-split -buffer-name=buffer buffer<cr>
+noremap « :vsplit<cr>:Unite -no-split -buffer-name=buffer buffer<cr>
+noremap – :split<cr>:Unite -no-split -buffer-name=buffer buffer<cr>
+nnoremap < :bp<cr>
+nnoremap > :bn<cr>
+
 " Line insertion
 noremap o o<esc>
 noremap O O<esc>
