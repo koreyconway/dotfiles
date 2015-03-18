@@ -124,11 +124,11 @@ vnoremap gp "+gp
 vnoremap gP "+P
 
 " Copying
-noremap gy "+y
-noremap gY "+Y
-noremap yyy yyp
+noremap gy "+y`]
+noremap gY "+Y`]
 vnoremap y y`]
 vnoremap Y Y`]
+noremap yyy yyp
 
 " Cut
 nnoremap x "0d
