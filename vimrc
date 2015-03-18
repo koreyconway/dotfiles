@@ -59,6 +59,7 @@ set swapfile
 set splitbelow
 set splitright
 set autochdir
+autocmd BufNewFile,BufRead * setlocal formatoptions-=ro
 map <space> \
 let maplocalleader = ","
 
