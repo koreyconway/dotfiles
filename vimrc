@@ -107,6 +107,7 @@ nnoremap > :bn<cr>
 " Line insertion
 noremap o o<esc>
 noremap O O<esc>
+nnoremap <cr> i<cr><esc>
 
 " Indentation
 vnoremap > >`<v`>
