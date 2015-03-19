@@ -1,6 +1,6 @@
 " GUI Options
 set guioptions+=crl
-colorscheme monokai
+colorscheme molokai
 " set guifont=Monospace\ 11
 noremap ˙ <c-w>h
 noremap ∆ <c-w>j
