@@ -40,6 +40,7 @@ bindkey -e
 
 # Alias r to ranger
 command -v ranger > /dev/null 2>&1 && alias r=ranger
+command -v git > /dev/null 2>&1 && alias gai='git add -i'
 
 # Useful Shortcuts
 alias b=popd # go back in directories
