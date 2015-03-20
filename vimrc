@@ -17,7 +17,7 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimproc.vim'
 NeoBundle 'Shougo/neomru.vim'
-NeoBundle 'h1mesuke/unite-outline'
+NeoBundle 'Shougo/unite-outline'
 if executable('ag')
 	NeoBundle 'rking/ag.vim'
 endif
