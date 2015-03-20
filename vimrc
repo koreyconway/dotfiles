@@ -125,7 +125,7 @@ noremap gy "+y`]
 noremap gY "+Y`]
 vnoremap y y`]
 vnoremap Y Y`]
-noremap yyy yyp
+nnoremap yyy yyp
 
 " Cut
 nnoremap x "0d
