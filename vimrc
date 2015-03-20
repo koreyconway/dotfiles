@@ -18,6 +18,9 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimproc.vim'
 NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'Shougo/unite-outline'
+if executable('ranger')
+	NeoBundle 'koreyconway/ranger.vim'
+endif
 if executable('ag')
 	NeoBundle 'rking/ag.vim'
 endif
