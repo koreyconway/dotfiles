@@ -94,8 +94,8 @@ noremap <esc>h <c-w>h
 noremap <esc>j <c-w>j
 noremap <esc>k <c-w>k
 noremap <esc>l <c-w>l
-noremap <esc>\ :vsplit<cr>:Unite -no-split -buffer-name=buffer buffer<cr>
-noremap <esc>- :split<cr>:Unite -no-split -buffer-name=buffer buffer<cr>
+noremap <leader>\ :vsplit<cr>:Unite -no-split -buffer-name=mru file_mru<cr>
+noremap <leader>- :split<cr>:Unite -no-split -buffer-name=mru file_mru<cr>
 noremap « :vsplit<cr>:Unite -no-split -buffer-name=buffer buffer<cr>
 noremap – :split<cr>:Unite -no-split -buffer-name=buffer buffer<cr>
 nnoremap < :bp<cr>
