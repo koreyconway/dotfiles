@@ -19,6 +19,7 @@ NeoBundle 'Shougo/vimproc.vim'
 NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'Shougo/unite-outline'
 NeoBundle 'Lokaltog/vim-easymotion'
+NeoBundle 'Chiel92/vim-autoformat'
 if executable('ranger')
 	NeoBundle 'koreyconway/ranger.vim'
 endif
@@ -170,4 +171,7 @@ let g:tagbar_autofocus = 1
 let g:tagbar_autoclose = 1
 let g:tagbar_sort = 0
 noremap <f2> :TagbarToggle<cr>
+
+" Autoformat Settings
+nnoremap <Leader><Space> :Autoformat<CR>
 
