@@ -19,6 +19,8 @@ NeoBundle 'Shougo/vimproc.vim'
 NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'Shougo/unite-outline'
 NeoBundle 'Lokaltog/vim-easymotion'
+NeoBundle 'Valloric/YouCompleteMe'
+NeoBundle 'marijnh/tern_for_vim'
 NeoBundle 'Chiel92/vim-autoformat'
 if executable('ranger')
 	NeoBundle 'koreyconway/ranger.vim'
