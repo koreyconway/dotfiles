@@ -18,6 +18,7 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimproc.vim'
 NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'Shougo/unite-outline'
+NeoBundle 'Lokaltog/vim-easymotion'
 if executable('ranger')
 	NeoBundle 'koreyconway/ranger.vim'
 endif
@@ -92,6 +93,18 @@ noremap <down> gj
 noremap <home> g<home>
 noremap <end> g<end>
 
+" Easy Motion
+let g:EasyMotion_smartcase = 1
+let g:EasyMotion_do_mapping = 0
+map f <Plug>(easymotion-bd-f)
+map t <Plug>(easymotion-bd-t)
+map <leader>fj <Plug>(easymotion-j)
+map <leader>fk <Plug>(easymotion-k)
+map <leader>fh <Plug>(easymotion-linebackward)
+map <leader>fl <Plug>(easymotion-lineforward)
+map <leader>fw <Plug>(easymotion-bd-w)
+map <leader>fe <Plug>(easymotion-bd-e)
+
 " Window Navigation
 noremap <esc>h <c-w>h
 noremap <esc>j <c-w>j
@@ -133,6 +146,7 @@ nnoremap yyy yyp
 " Cut
 nnoremap x "0d
 nnoremap xx "0dd
+nnoremap XX :let @0=@0.getline('.')<cr>"_dd
 vnoremap x "0d
 
 " Search
@@ -145,10 +159,10 @@ endif
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
 call unite#filters#sorter_default#use(['sorter_rank'])
 call unite#custom#source('file_rec,file_rec/async', 'ignore_pattern', '\.jpe?g$|\.gif$|\.png$|\.pdf$')
-map <leader>ff :Unite -no-split -buffer-name=files -start-insert file_rec/async:!<cr>
-map <leader>fb :Unite -no-split -buffer-name=buffer buffer<cr>
-map <leader>fr :Unite -no-split -buffer-name=mru file_mru<cr>
-map <leader>fy :Unite -no-split -buffer-name=yank history/yank<cr>
+map <leader>of :Unite -no-split -buffer-name=files -start-insert file_rec/async<cr>
+map <leader>ob :Unite -no-split -buffer-name=buffer buffer<cr>
+map <leader>or :Unite -no-split -buffer-name=mru file_mru<cr>
+map <leader>oy :Unite -no-split -buffer-name=yank history/yank<cr>
 map <f4> :Unite -no-split -buffer-name=buffer buffer<cr>
 
 " Tagbar Settings
