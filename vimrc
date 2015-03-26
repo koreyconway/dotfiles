@@ -19,7 +19,9 @@ NeoBundle 'Shougo/vimproc.vim'
 NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'Shougo/unite-outline'
 NeoBundle 'Lokaltog/vim-easymotion'
-NeoBundle 'Valloric/YouCompleteMe'
+if v:version > 703 || (v:version == 703 && has('patch584'))
+	NeoBundle 'Valloric/YouCompleteMe'
+endif
 NeoBundle 'marijnh/tern_for_vim'
 NeoBundle 'Chiel92/vim-autoformat'
 if executable('ranger')
