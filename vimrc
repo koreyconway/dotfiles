@@ -91,6 +91,7 @@ noremap <leader>q :q<cr>
 noremap W :w<cr>
 noremap Q :q<cr>
 nnoremap q: :q<cr>
+noremap q <nop>
 
 " Navigation
 noremap <up> gk
