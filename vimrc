@@ -19,6 +19,7 @@ NeoBundle 'Shougo/vimproc.vim'
 NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'Shougo/unite-outline'
 NeoBundle 'Lokaltog/vim-easymotion'
+NeoBundle 'mbbill/undotree'
 if v:version > 703 || (v:version == 703 && has('patch584'))
 	NeoBundle 'Valloric/YouCompleteMe'
 endif
@@ -58,8 +59,9 @@ set cursorline
 set encoding=utf-8
 silent execute '!mkdir -p $HOME/.vim/backup'
 silent execute '!mkdir -p $HOME/.vim/swap'
-if version >= 703
+if has("persistent_undo")
 	set undodir=$HOME/.vim/undo//
+	set undofile
 endif
 set backupdir=$HOME/.vim/backup//
 set directory=~/.vim/swap//
@@ -85,6 +87,7 @@ vnoremap q <esc>
 
 " Undo
 noremap U <c-r>
+noremap <leader>u :UndotreeToggle<cr>:UndotreeFocus<cr>
 
 " Saving and quitting
 noremap <leader>q :q<cr>
