@@ -137,6 +137,10 @@ nnoremap <cr> i<cr><esc>
 vnoremap > >`<v`>
 vnoremap < <`<v`>
 
+" Text modifiers
+noremap gU gu
+noremap gu gU
+
 " Pasting
 nnoremap p "0gp
 nnoremap P "0P
