@@ -21,6 +21,7 @@ antigen bundle tmux
 command -v git > /dev/null 2>&1 && antigen bundle git
 command -v svn > /dev/null 2>&1 && antigen bundle svn
 command -v sudo > /dev/null 2>&1 && antigen bundle sudo
+command -v npm > /dev/null 2>&1 && antigen bundle npm
 
 # Set theme
 antigen theme robbyrussell
