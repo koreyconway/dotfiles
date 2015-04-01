@@ -93,6 +93,8 @@ nnoremap q: :q<cr>
 " Navigation
 noremap <up> gk
 noremap <down> gj
+noremap k gk
+noremap j gj
 noremap <home> g<home>
 noremap <end> g<end>
 
