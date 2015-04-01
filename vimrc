@@ -169,6 +169,7 @@ map <leader>ob :Unite -no-split -buffer-name=buffer buffer<cr>
 map <leader>or :Unite -no-split -buffer-name=mru file_mru<cr>
 map <leader>oy :Unite -no-split -buffer-name=yank history/yank<cr>
 map <f4> :Unite -no-split -buffer-name=buffer buffer<cr>
+nnoremap gw :bw<cr>
 
 " Tagbar Settings
 let g:tagbar_autofocus = 1
