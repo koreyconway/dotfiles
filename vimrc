@@ -84,6 +84,7 @@ noremap g: q:
 " Escape
 inoremap jj <esc>`^
 vnoremap q <esc>
+nnoremap q <nop>
 
 " Undo
 noremap U <c-r>
@@ -94,7 +95,6 @@ noremap <leader>q :q<cr>
 noremap W :w<cr>
 noremap Q :q<cr>
 nnoremap q: :q<cr>
-noremap q <nop>
 
 " Navigation
 noremap <up> gk
