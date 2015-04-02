@@ -20,6 +20,7 @@ NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'Shougo/unite-outline'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'mbbill/undotree'
+NeoBundle 'tomtom/tcomment_vim'
 if v:version > 703 || (v:version == 703 && has('patch584'))
 	NeoBundle 'Valloric/YouCompleteMe'
 endif
@@ -140,6 +141,10 @@ vnoremap < <`<v`>
 " Text modifiers
 noremap gU gu
 noremap gu gU
+
+" Commenting
+nmap <leader>c gcc
+vmap <leader>c gcgv
 
 " Pasting
 nnoremap p "0gp
