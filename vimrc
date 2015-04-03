@@ -98,6 +98,7 @@ noremap Q :q<cr>
 nnoremap q: :q<cr>
 
 " Navigation
+set whichwrap+=<,>,h,l,[,],~
 noremap <up> gk
 noremap <down> gj
 noremap k gk
