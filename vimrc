@@ -47,8 +47,6 @@ set number
 set scrolloff=10
 set ignorecase
 set smartcase
-set hlsearch
-set incsearch
 set nostartofline
 set hidden
 set visualbell
@@ -171,6 +169,8 @@ nnoremap XX :let @0=@0.getline('.')<cr>"_dd
 vnoremap x "0d
 
 " Search
+set hlsearch
+set incsearch
 vnoremap // y/<c-r>"<cr>
 
 " Open Files/Buffers/Whatevers
