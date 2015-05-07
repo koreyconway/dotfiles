@@ -29,6 +29,7 @@ NeoBundle 'Chiel92/vim-autoformat'
 if executable('ranger')
 	NeoBundle 'koreyconway/ranger.vim'
 endif
+NeoBundle 'lukaszb/vim-web-indent'
 if executable('ag')
 	NeoBundle 'rking/ag.vim'
 endif
