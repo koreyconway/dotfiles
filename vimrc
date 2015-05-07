@@ -146,8 +146,8 @@ noremap gU gu
 noremap gu gU
 
 " Commenting
-nmap <leader>c gcc
-vmap <leader>c gcgv
+nmap <leader>c <Plug>TComment_gcc
+vmap <leader>c <Plug>TComment_gccgv
 
 " Pasting
 nnoremap p "0gp
