@@ -80,9 +80,12 @@ let maplocalleader = ","
 " Command Line Window
 noremap g: q:
 
+" Visual Mode Specials
+vnoremap q <esc>
+vnoremap $ $h
+
 " Escape
 inoremap jj <esc>`^
-vnoremap q <esc>
 nnoremap q <nop>
 
 " Undo
