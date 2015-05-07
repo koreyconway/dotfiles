@@ -92,7 +92,7 @@ nnoremap q <nop>
 noremap U <c-r>
 noremap <leader>u :UndotreeToggle<cr>:UndotreeFocus<cr>
 
-" Saving and quitting
+" Saving and Quitting
 noremap <leader>q :q<cr>
 noremap W :w<cr>
 noremap Q :q<cr>
