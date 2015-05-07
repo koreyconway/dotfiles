@@ -28,7 +28,7 @@ antigen theme robbyrussell
 
 # Needed by zsh_reload
 if [[ -z "$ZSH_CACHE_DIR" ]]; then
-  ZSH_CACHE_DIR="$ZSH/cache/"
+	ZSH_CACHE_DIR="$ZSH/cache/"
 fi
 
 antigen apply
