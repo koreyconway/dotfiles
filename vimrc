@@ -201,3 +201,8 @@ noremap <f2> :TagbarToggle<cr>
 " Autoformat Settings
 nnoremap <Leader><Space> :Autoformat<CR>
 
+" Local Settings
+if filereadable(glob( "~/.vimrc.local" ))
+	source ~/.vimrc.local
+endif
+
