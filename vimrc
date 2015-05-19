@@ -21,6 +21,7 @@ NeoBundle 'Shougo/unite-outline'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'mbbill/undotree'
 NeoBundle 'tomtom/tcomment_vim'
+NeoBundle 'Townk/vim-autoclose'
 if v:version > 703 || (v:version == 703 && has('patch584'))
 	NeoBundle 'Valloric/YouCompleteMe'
 endif
